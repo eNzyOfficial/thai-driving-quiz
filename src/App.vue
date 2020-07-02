@@ -237,7 +237,12 @@ li a {
   margin-bottom: 5px;
 }
 
-@media(hover: hover) and (pointer: fine) {
+li a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+@media (hover: hover) and (pointer: fine) {
   li a:hover {
     text-decoration: none;
     background: #a0a0a0;
@@ -250,6 +255,6 @@ li a {
   color: white;
   padding: 10px;
   font-size: 14px;
-  margin-bottom:10px;
+  margin-bottom: 10px;
 }
 </style>
