@@ -25,7 +25,9 @@
           <div v-else>
             <h2>{{ currentSectionTitle }} ({{ this.currentQuestionIndex + 1}}/{{ this.currentSectionQuestions.length }})</h2>
 
-            <p><strong>{{ currentQuestion }}</strong></p>
+            <p>
+              <strong>{{ currentQuestion }}</strong>
+            </p>
 
             <img v-if="currentImage" :src="currentImage" class="img-fluid" />
 
@@ -36,18 +38,26 @@
             </ol>
 
             <div v-if="showAnswer">
-              <p><strong>{{ currentCorrectAnswerText }}</strong></p>
-              <a href="#" class="btn btn-success" @click.prevent="nextQuestion()" style="margin-bottom:40px;">Next Question</a>
+              <p>
+                <strong>{{ currentCorrectAnswerText }}</strong>
+              </p>
+              <a
+                href="#"
+                class="btn btn-success"
+                @click.prevent="nextQuestion()"
+                style="margin-bottom:40px;"
+              >Next Question</a>
             </div>
 
             <div class="row">
               <div class="col-6" style="text-align:left;align-self: flex-end;">
-                Correct: {{ currentScore.correct }}<br>
+                Correct: {{ currentScore.correct }}
+                <br />
                 Incorrect: {{ currentScore.incorrect }}
               </div>
 
               <div class="col-6" style="text-align:right;align-self: flex-end;">
-                <a href="#" @click.prevent="reset()" class="">Back to sections</a>
+                <a href="#" @click.prevent="reset()" class>Back to sections</a>
               </div>
             </div>
           </div>
@@ -117,13 +127,13 @@ export default {
     },
 
     currentCorrectAnswerText() {
-      return this.currentAnswers[this.currentCorrectAnswer]
+      return this.currentAnswers[this.currentCorrectAnswer];
     }
   },
 
   methods: {
     reset() {
-      this.showAnswer = false
+      this.showAnswer = false;
 
       this.currentScore = {
         correct: 0,
@@ -144,23 +154,26 @@ export default {
 
     submitAnswer(index) {
       if (this.showAnswer) {
-        return
+        return;
       }
 
       if (this.currentCorrectAnswer === index) {
         this.currentScore.correct++;
 
-        this.nextQuestion()
+        this.nextQuestion();
       } else {
         this.currentScore.incorrect++;
-        this.showAnswer = true
+        this.showAnswer = true;
       }
     },
 
     nextQuestion() {
-      this.showAnswer = false
+      this.showAnswer = false;
 
-      if (this.currentQuestionIndex !== this.currentSectionQuestions.length - 1) {
+      if (
+        this.currentQuestionIndex !==
+        this.currentSectionQuestions.length - 1
+      ) {
         this.currentQuestionIndex++;
       } else {
         this.stage = "score";
@@ -171,8 +184,9 @@ export default {
 </script>
 
 <style lang="scss">
-html, body {
-  background:#f0f0f0;
+html,
+body {
+  background: #f0f0f0;
 }
 
 #app {
@@ -184,17 +198,23 @@ html, body {
   margin-top: 20px;
 }
 
+a,
+a:visited,
+a:active {
+  color: inherit;
+}
+
 h2 {
   border-bottom: 1px solid black;
-  padding-bottom:5px;
+  padding-bottom: 5px;
 }
 
 .box {
-  background:white;
+  background: white;
   border-radius: 10px;
   padding: 20px;
-  margin:auto;
-  max-width:800px;
+  margin: auto;
+  max-width: 800px;
 }
 
 img {
@@ -207,13 +227,16 @@ ol {
 
 li a {
   font-size: 16px;
+  background: #f8f8f8;
+  padding: 10px;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 5px;
 }
 
 li a:hover {
   text-decoration: none;
-}
-
-a, a:visited, a:active {
-  color: inherit;
+  background: #a0a0a0;
+  color: white;
 }
 </style>
