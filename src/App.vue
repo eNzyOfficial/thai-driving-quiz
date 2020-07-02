@@ -25,9 +25,7 @@
           <div v-else>
             <h2>{{ currentSectionTitle }} ({{ this.currentQuestionIndex + 1}}/{{ this.currentSectionQuestions.length }})</h2>
 
-            <p>
-              <strong>{{ currentQuestion }}</strong>
-            </p>
+            <h6>{{ currentQuestion }}</h6>
 
             <img v-if="currentImage" :src="currentImage" class="img-fluid" />
 
@@ -38,12 +36,13 @@
             </ol>
 
             <div v-if="showAnswer">
-              <p>
+              <p class="correct-answer">
                 <strong>{{ currentCorrectAnswerText }}</strong>
               </p>
+
               <a
                 href="#"
-                class="btn btn-success"
+                class="btn btn-secondary"
                 @click.prevent="nextQuestion()"
                 style="margin-bottom:40px;"
               >Next Question</a>
@@ -209,6 +208,10 @@ h2 {
   padding-bottom: 5px;
 }
 
+h6 {
+  margin: 20px 0;
+}
+
 .box {
   background: white;
   border-radius: 10px;
@@ -238,5 +241,13 @@ li a:hover {
   text-decoration: none;
   background: #a0a0a0;
   color: white;
+}
+
+.correct-answer {
+  background: #f87070;
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom:10px;
 }
 </style>
