@@ -143,6 +143,10 @@ export default {
     },
 
     submitAnswer(index) {
+      if (this.showAnswer) {
+        return
+      }
+
       if (this.currentCorrectAnswer === index) {
         this.currentScore.correct++;
 
@@ -207,5 +211,9 @@ li a {
 
 li a:hover {
   text-decoration: none;
+}
+
+a, a:visited, a:active {
+  color: inherit;
 }
 </style>
