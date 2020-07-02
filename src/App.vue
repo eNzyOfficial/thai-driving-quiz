@@ -237,10 +237,12 @@ li a {
   margin-bottom: 5px;
 }
 
-li a:hover {
-  text-decoration: none;
-  background: #a0a0a0;
-  color: white;
+@media(hover: hover) and (pointer: fine) {
+  li a:hover {
+    text-decoration: none;
+    background: #a0a0a0;
+    color: white;
+  }
 }
 
 .correct-answer {
