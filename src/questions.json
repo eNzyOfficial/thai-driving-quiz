@@ -180,7 +180,7 @@
                   "Car carrying passengers or rent, carrying no more than seven passengers ",
                   "Car carrying passengers or rent, carrying more than seven passengers "
               ],
-              "correct": 3
+              "correct": 2
           },
           {
               "question": "19. Which item is “personal vehicle”? ",
@@ -220,7 +220,7 @@
                   "Cars for His Majesty the King ",
                   "Commander-in-Chief’s Car "
               ],
-              "correct": 0
+              "correct": 2
           },
           {
               "question": "23. The following vehicles are exempt from registration. ",
@@ -770,7 +770,7 @@
                   "Do not annoy yourself",
                   "Smoking causes stress when traffic congestion "
               ],
-              "correct": 0
+              "correct": 2
           },
           {
               "question": "78. How should public drivers behave?",
@@ -780,7 +780,7 @@
                   "Wear a T-shirt to drive",
                   "Do not speak impolite or sarcastic "
               ],
-              "correct": 2
+              "correct": 3
           },
           {
               "question": "79. How should public drivers behave?",
@@ -790,7 +790,7 @@
                   "Wear a T-shirt to drive",
                   "Smoking causes stress when traffic congestion "
               ],
-              "correct": 3
+              "correct": 0
           },
           {
               "question": "80. How should drivers in public vehicles behave?",
@@ -800,7 +800,7 @@
                   "Put on the uniform of the driver on the route that the officer set up regularly.",
                   "Do not consume alcoholic beverages "
               ],
-              "correct": 0
+              "correct": 3
           },
           {
               "question": "81. How should public drivers behave?",
@@ -810,7 +810,7 @@
                   "Parking according to the needs of the users",
                   "Smoking causes stress when traffic congestion "
               ],
-              "correct": 3
+              "correct": 2
           },
           {
               "question": "82. How should public drivers behave?",
@@ -820,7 +820,7 @@
                   "Pamper the passengers to reach their destination as quickly as possible.",
                   "Smoking causes stress when traffic congestion "
               ],
-              "correct": 1
+              "correct": 0
           },
           {
               "question": "83. How should public drivers behave?",
@@ -830,7 +830,7 @@
                   "Do not drive while being weak",
                   "Give away telephone numbers to find customers "
               ],
-              "correct": 0
+              "correct": 2
           },
           {
               "question": "84. What is the penalty for anyone who drives a car without a driver’s license?",
@@ -840,7 +840,7 @@
                   "fined not more than 6 months or fined not more than 1,000 baht or both",
                   "Fine not exceeding 2,000 baht "
               ],
-              "correct": 2
+              "correct": 3
           },
           {
               "question": "85. What is the penalty for anyone who drives a car with an expired driver’s license?",
@@ -1048,7 +1048,7 @@
                   "Will reduce the speed of the car",
                   "Park the car."
               ],
-              "correct": 0
+              "correct": 2
           },
           {
               "question": "18. How far must the driver drive the car from the front car?",
@@ -1058,7 +1058,7 @@
                   "Not less than 1 meter",
                   "Not less than 3 meters"
               ],
-              "correct": 2
+              "correct": 0
           },
           {
               "question": "19. How many meters does the driver want to turn left to drive in the left lane before reaching the turn?",
@@ -1068,7 +1068,7 @@
                   "Not less than 25 meters",
                   "Not less than 30 meters"
               ],
-              "correct": 0
+              "correct": 3
           },
           {
               "question": "20. The driver must turn on the headlights or taillights of the car. Let other vehicles see at a distance not less than",
@@ -1078,7 +1078,7 @@
                   "60 meters",
                   "120 meter"
               ],
-              "correct": 3
+              "correct": 0
           },
           {
               "question": "21. In driving opposite directions What should the driver do?",
@@ -1185,6 +1185,7 @@
               "answers": [
                   "Driving abnormalities",
                   "Overtaking the car in the tunnel Drive in a traffic obstruction manner",
+                  "Drive in a traffic obstruction manner",
                   "Drive faster than the rate required by law"
               ],
               "correct": 3
@@ -1317,7 +1318,7 @@
                   "Cannot make a U-turn",
                   "can make a U-turn if not at a crossroad"
               ],
-              "correct": 1
+              "correct": 0
           },
           {
               "question": "45. What should a driver do to return a car?",
@@ -1628,8 +1629,8 @@
               "question": "21. This sign What does it mean?",
               "image": "14-c1f9.jpg",
               "answers": [
-                  "No idea what was here, it was a duplicate of answer B",
                   "All vehicles must pass into the area where signs are installed",
+                  "All vehicles must not pass into the area where signs are installed",
                   "Only cars will pass through the area where signs are installed",
                   "Cars should stop and stop – Can be delivered in the area where signs are installed"
               ],
@@ -1809,7 +1810,7 @@
                   "Don’t drive to the right",
                   "Drivers must drive past the right side of the sign"
               ],
-              "correct": 1
+              "correct": 2
           },
           {
               "question": "38. This sign What does it mean?",
@@ -2040,7 +2041,7 @@
                   "Reverse curves begin right",
                   "Left curves"
               ],
-              "correct": 0
+              "correct": 1
           },
           {
               "question": "59. When seeing this sign What should the driver do?",
@@ -2117,7 +2118,7 @@
                   "The masters separate the masters from the left, Y-shaped.",
                   "The Master’s degree intersection from the Y-shaped right"
               ],
-              "correct": 0
+              "correct": 1
           },
           {
               "question": "66. What does this sign mean?",
@@ -2139,7 +2140,7 @@
                   "The way ahead is a narrow path",
                   "The way ahead is the intersection."
               ],
-              "correct": 1
+              "correct": 0
           },
           {
               "question": "68. What does this sign mean?",
@@ -2150,7 +2151,7 @@
                   "Narrow side to left",
                   "Narrow forward way is passing through both sides"
               ],
-              "correct": 0
+              "correct": 3
           },
           {
               "question": "69. What does this sign mean?",
@@ -2161,7 +2162,7 @@
                   "Narrow side on the left",
                   "Broader sides on both sides"
               ],
-              "correct": 3
+              "correct": 2
           },
           {
               "question": "70. What does this sign mean?",
@@ -2172,7 +2173,7 @@
                   "Narrow side on left",
                   "Narrower side on both sides"
               ],
-              "correct": 2
+              "correct": 0
           },
           {
               "question": "71. When seeing this sign What should the driver do?",
@@ -2378,6 +2379,7 @@
               "answers": [
                   "Drive carefully to the left side with caution. Left aisle",
                   "Drive carefully to the left Aisle narrow right Drive the car to the left with caution, when going down the slope.",
+                  "Drive the car to the left with caution, when going down the slope",
                   "Drive carefully to the left side with caution."
               ],
               "correct": 3
@@ -2388,7 +2390,8 @@
               "answers": [
                   "Drive slowly and keep left, be extra careful Right side way.",
                   "Drive slowly and keep left. Be careful. The way ahead is a shared road without islands.",
-                  "Drive slowly and keep left. The way ahead .D. Drive slowly and keep left. Be careful. Left hand side"
+                  "Drive slowly and keep left. The way ahead .D. Drive slowly and keep left. Be careful. Left hand side",
+                  "Drive slowly and keep left. Be careful. Left hand side"
               ],
               "correct": 1
           },
@@ -4089,8 +4092,9 @@
               "question": "28. What are the differences between gasoline and diesel engines?",
               "answers": [
                   "Different starting systems",
-                  "Different cooling water systems ",
-                  " Different electrical systems"
+                  "Different cooling water systems",
+                  "Gasoline engines use spark plugs for ignition",
+                  "Different electrical systems"
               ],
               "correct": 2
           },

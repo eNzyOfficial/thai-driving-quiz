@@ -4,7 +4,7 @@
       <div class="col-12">
         <div class="box">
           <div v-if="stage === 'score'">
-            <h2>Score</h2>
+            <h2>{{ currentSectionTitle }}</h2>
 
             <p>Correct: {{ currentScore.correct }}</p>
             <p>Incorrect: {{ currentScore.incorrect }}</p>
