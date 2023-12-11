@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="container">
+  <div id="app" class="container" @keydown="handleKeyDown">
     <div class="row">
       <div class="col-12">
         <div class="box">
@@ -8,6 +8,7 @@
 
             <p>Correct: {{ currentScore.correct }}</p>
             <p>Incorrect: {{ currentScore.incorrect }}</p>
+            <p>Percent: {{ (currentScore.correct / this.currentSectionQuestions.length * 100).toFixed(0) }}%</p>
 
             <a href="#" @click.prevent="reset()" class="btn btn-primary">Reset</a>
           </div>
@@ -23,7 +24,8 @@
           </div>
 
           <div v-else>
-            <h2>{{ currentSectionTitle }} ({{ this.currentQuestionIndex + 1}}/{{ this.currentSectionQuestions.length }})</h2>
+            <h2>{{ currentSectionTitle }} ({{ this.currentQuestionIndex + 1 }}/{{ this.currentSectionQuestions.length }})
+            </h2>
 
             <h6>{{ currentQuestion }}</h6>
 
@@ -40,12 +42,8 @@
                 <strong>{{ currentCorrectAnswerText }}</strong>
               </p>
 
-              <a
-                href="#"
-                class="btn btn-secondary"
-                @click.prevent="nextQuestion()"
-                style="margin-bottom:40px;"
-              >Next Question</a>
+              <a href="#" class="btn btn-secondary" @click.prevent="nextQuestion()" style="margin-bottom:40px;">Next
+                Question</a>
             </div>
 
             <div class="row">
@@ -68,6 +66,7 @@
 
 <script>
 import questions from "./questions.json";
+import questionsOld from "./questions-old.json";
 
 export default {
   name: "app",
@@ -130,6 +129,20 @@ export default {
     }
   },
 
+  mounted() {
+    const queryParams = window.location.search.substring(1)
+      .split('&')
+      .map(param => param.split('='))
+      .reduce((acc, [key, value]) => ({ ...acc, [key]: decodeURIComponent(value) }), {});
+
+      const type = queryParams.type
+
+
+    if (type === 'old') {
+      this.questions = questionsOld
+    }
+  },
+
   methods: {
     reset() {
       this.showAnswer = false;
@@ -176,6 +189,16 @@ export default {
         this.currentQuestionIndex++;
       } else {
         this.stage = "score";
+      }
+    },
+
+    handleKeyDown(e) {
+      if (this.stage === 'questions') {
+        if (this.showAnswer && e.keyCode === 32) {
+          this.nextQuestion()
+        } else if (e.keyCode >= 49 && e.keyCode <= 52) {
+          this.submitAnswer(e.keyCode - 49)
+        }
       }
     }
   }
